@@ -11,33 +11,43 @@ const Login = () => {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
+  function submitFn(data) {console.log("Subbmited", data)}
   return (
-    <div> 
-      <form>
+    <div className='h-[100vh] w-full'> 
+      <form onSubmit={handleSubmit(submitFn)} 
+      className='flex flex-col space-y-2 justify-center h-full w-full items-center' >
+       
+        <div className='space-x-2.5 flex-col' >
+          <label> Email:</label> 
+          <input 
+            type='email' placeholder='Enter Email' className={`border-black border-2 ${errors.email ? "border-red-500 border-2" : ""}`}
+          {...register('email',
+            {required:{value:true, message:"Email is required"},
+            pattern:{value: /^[A-Za-z0-9@. ]+$/, // @ allowed
+              message: "Special characters are not allowed"}
+          })}
+          />
+          {errors.email && <p className='text-red-500 text-xs'> {errors.email.message} </p>}  
+        </div>
+
+
+        <div className='space-x-2.5 flex-col' >
+          <label> Password:</label>
+          <input 
+          className={`border-black border-2 ${errors.email ? "border-red-500 border-2" : ""}` } type='password' placeholder='Enter Password' {...register('password',{
+            required:{value:true, message:"password is required"},
+            minLength:{value:8, message:"password length must be atleast 8"}
+          })}/>
+
+          {errors.password && <p className='text-red-500 text-xs'>{errors.password.message}</p>}
+        </div>
+
+        <input type="submit" disabled={isSubmitting} value={isSubmitting ? 'Submiting' : 'Submit'} />
+        {/* <button>Submit</button> */}
         
-        <div>
-          <label> First Name:</label>
-          <input />
-        </div>
-        <div>
-          <label> First Name:</label>
-          <input/>
-        </div>
-        <div>
-          <label> First Name:</label>
-          <input/>
-        </div>
-        <div>
-          <label> First Name:</label>
-          <input/>
-        </div>
-        <div>
-          <label> First Name:</label>
-          <input/>
-        </div>
       </form>
     </div>
     // <>
