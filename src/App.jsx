@@ -10,6 +10,7 @@ import Home from './compenents/home';
 import Login from './compenents/Login';
 import SignUp from './compenents/SignUp';
 import Navbar from './compenents/Navbar';
+import AdminDashboard from './compenents/Admin/AdminDashboard';
 
 const router = createBrowserRouter(
   [
@@ -35,6 +36,10 @@ const router = createBrowserRouter(
     {
       path:"/dashboard",
       element:<Dashboard/>
+    },
+    {
+      path:"/admin",
+      element:<AdminDashboard/>
     }
   ]
 )
