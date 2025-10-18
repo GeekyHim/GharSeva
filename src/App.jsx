@@ -11,6 +11,7 @@ import Login from './compenents/Login';
 import SignUp from './compenents/SignUp';
 import Navbar from './compenents/Navbar';
 import AdminDashboard from './compenents/Admin/AdminDashboard';
+import PropertyPage from './compenents/Properties/PropertyPage';
 
 const router = createBrowserRouter(
   [
@@ -40,6 +41,10 @@ const router = createBrowserRouter(
     {
       path:"/admin",
       element:<AdminDashboard/>
+    },
+     {
+      path:"/property",
+      element:<PropertyPage/>
     }
   ]
 )
