@@ -1,6 +1,6 @@
 # GharSeva  <span style="font-size:0.5em;"> *(Under Development)*</span>
 
-**GharSeva** is a user-friendly web/mobile application designed to simplify flat and PG bookings, especially for college students and working professionals. The platform connects users with verified accommodations, allowing them to find safe, convenient, and affordable living spaces quickly and reliably.
+GharSeva is a property-rental and home-service platform focused on the needs of college students and working professionals. It allows users to browse verified property listings, filter based on location, budget and amenities while easily contacting owners for renting flats, rooms, and PGs. The platform offers a smooth booking flow along with secure JWT-based authentication to ensure trusted interactions. Users can leave reviews, compare options, and make informed decisions with a clean and intuitive interface. Designed for convenience and reliability, GharSeva helps students and professionals find suitable accommodation quickly and manage essential housing needs in one place.
 
 
 ## Table of Contents
@@ -40,10 +40,10 @@
 
 ## Technologies Used
 - **Frontend:** React.js, Tailwind CSS  
-- **Backend:** TBD
-- **Database:** TBD
+- **Backend:** Spring Boot
+- **Database:** PostgreSQL
 - **Authentication:** JWT / OAuth  
-- **Payment Integration:** TBD  
+- **Payment Integration:** Future Scope  
 
 
 ## Contact
