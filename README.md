@@ -1,5 +1,6 @@
-# GharSeva  <span style="font-size:0.5em;"> *(Under Development)*</span>
+# GharSeva  <span style="font-size:0.5em;"> *(Under Development)* *(Old Repo)*  </span>
 
+[https://github.com/GeekyHim/GharSeva-Backend](New Backend Repository) 
 GharSeva is a property-rental and home-service platform focused on the needs of college students and working professionals. It allows users to browse verified property listings, filter based on location, budget and amenities while easily contacting owners for renting flats, rooms, and PGs. The platform offers a smooth booking flow along with secure JWT-based authentication to ensure trusted interactions. Users can leave reviews, compare options, and make informed decisions with a clean and intuitive interface. Designed for convenience and reliability, GharSeva helps students and professionals find suitable accommodation quickly and manage essential housing needs in one place.
 
 
