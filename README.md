@@ -1,4 +1,6 @@
-# GharSeva  <span style="font-size:0.5em;"> *(Under Development)*</span>
+# GharSeva  <span style="font-size:0.5em;"> *(OLD REPOSITORY && Under Development)*</span>
+
+[NEW REPOSITORY](https://github.com/GeekyHim/GharSeva-Backend)
 
 **GharSeva** is a user-friendly web/mobile application designed to simplify flat and PG bookings, especially for college students and working professionals. The platform connects users with verified accommodations, allowing them to find safe, convenient, and affordable living spaces quickly and reliably.
 
